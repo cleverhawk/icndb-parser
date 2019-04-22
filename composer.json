@@ -1,0 +1,24 @@
+{
+    "name": "smarthawk/chuck-norris",
+    "description": "joke's parser from icndb.com",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "php-di/php-di": "^6.0",
+        "nikic/fast-route": "~0.5.0",
+        "twig/twig": "^1.18",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Smart Hawk",
+            "email": "smarthawk@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SmartHawk\\": "src\\app"
+        }
+    }
+}

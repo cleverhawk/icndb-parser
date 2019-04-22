@@ -2,22 +2,9 @@
 
 {% block content %}
 
-    <h1>Welcome to the blog!</h1>
-
-    <p>Have a look at our articles:</p>
-
-    <ul class="collection">
-
-    </ul>
-
-    <hr/>
-
-    <p>
-        To view the articles list in the CLI, run the following command:
-    </p>
-
-    <div class="card-panel grey darken-3" style="color: white">
-        <pre><code>php console.php articles</code></pre>
-    </div>
+    <p>Шутка: {{ joke }}</p>
+    <p>Отправлено на почту: {{ email }}</p>
+    <p>Успешно отправлено: {{ isSend }}</p>
+    <p>Успешно записано в файл: {{ isWrite }}</p>
 
 {% endblock %}

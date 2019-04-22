@@ -2,22 +2,18 @@
 
 {% block content %}
 
-    <h1>Welcome to the blog!</h1>
+    <form method="post">
+        <p>Выберите категорию шутки:</p>
+        <select name="limitTo">
+            {% for category in categoryList %}
+                <option>{{ category }}</option>
+            {% endfor %}
+        </select>
 
-    <p>Have a look at our articles:</p>
-
-    <ul class="collection">
-
-    </ul>
-
-    <hr/>
-
-    <p>
-        To view the articles list in the CLI, run the following command:
-    </p>
-
-    <div class="card-panel grey darken-3" style="color: white">
-        <pre><code>php console.php articles</code></pre>
-    </div>
+        <p>Введите e-mail:</p>
+        <input type="email" name="email">
+        <br>
+        <input type="submit">
+    </form>
 
 {% endblock %}
